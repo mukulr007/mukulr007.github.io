@@ -108,6 +108,9 @@ $(document).ready(function(){
         $('#mc_embed_signup').find('form').ajaxChimp();
     });      
 
+      document.getElementById('allProject').click();
+      
+ 
 
   $('.filters ul li').click(function(){
     $('.filters ul li').removeClass('active');
@@ -177,6 +180,7 @@ TxtType.prototype.tick = function() {
 };
 
 window.onload = function() {
+  document.getElementById("allProject").click();
   var elements = document.getElementsByClassName('typewrite');
   for (var i=0; i<elements.length; i++) {
       var toRotate = elements[i].getAttribute('data-type');
@@ -191,3 +195,14 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; color: #fff;}";
   document.body.appendChild(css);
 };
+
+
+
+
+
+let text = document.querySelector('.banner h2');
+
+window.addEventListener('scroll', () => {
+  let value = window.scrollY;
+  text.style.marginBottom = value * 2 + 'px';
+})
