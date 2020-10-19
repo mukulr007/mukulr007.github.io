@@ -2182,6 +2182,7 @@ h6 {
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
+  z-index: 1000;
 }
 
 .primary-btn:focus {
